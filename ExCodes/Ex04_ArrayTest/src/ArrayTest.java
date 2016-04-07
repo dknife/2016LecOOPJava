@@ -20,11 +20,9 @@ public class ArrayTest {
 		
 		// compute the sum of all elements in arr
 		int sum=0;
-		for(int a[] : arr) {
-			for( int e : a ) {
-				sum += e;
-			}
-		}
+		for(int a[] : arr) 
+			for( int e : a ) sum += e;			
+		
 		
 		System.out.println("sum = " + sum);
 	}
