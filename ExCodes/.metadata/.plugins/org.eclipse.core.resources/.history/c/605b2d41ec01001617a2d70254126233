@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] arg) {
+		Scanner myScanner = new Scanner(System.in);
+		
+		System.out.print("how many students? ");
+		int nStudents = myScanner.nextInt();
+
+		Student student[] = new Student[nStudents];
+		
+		for(int i=0;i<nStudents; i++) {
+			student[i].setName(myScanner.next());
+			student[i].setScore(0, myScanner.nextInt());
+			student[i].setScore(1, myScanner.nextInt());
+			student[i].setScore(2, myScanner.nextInt());
+		}
+		
+		for(int i=0;i<nStudents; i++) {
+			student[i].display();
+		}
+		
+	}
+}
